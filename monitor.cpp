@@ -26,6 +26,7 @@ int vitalsOk(float temperature, float pulseRate, float spo2) {
     return 0;
   } else if (spo2 < 90) {
     cout << "Oxygen Saturation out of range!\n";
+    cout << "Trial1!\n";
     for (int i = 0; i < 6; i++) {
       cout << "\r* " << flush;
       sleep_for(seconds(1));
